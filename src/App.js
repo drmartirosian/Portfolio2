@@ -3,6 +3,8 @@ import './App.css';
 import panda from './img/panda.png'
 import junky from './img/junky.png'
 import dom from './img/dom.png'
+import coverletter from './img/coverletter.png'
+import resume from './img/resume.png'
 import Card from './components/Card'
 
 
@@ -23,29 +25,20 @@ class App extends Component {
     return (
       <div className="App">
 
-
-      
-      {/* <!-- Header Showcase --> */}
       <header id="showcase" className="grid">
         <div className="bg-image"></div>
           <div className="content-wrap">
-          <h1>Welcome to Acme Web Solutions</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi laboriosam eos saepe asperiores dolorum.</p>
+          <h1>Daniel <strong>Martirosian</strong></h1>
+          <p>Description here...</p>
           <h3>Let's<br></br> <a href="#section-b" className="btn">START</a></h3>
         </div>
       </header>
 
-
-
-
-      {/* <!-- Main Area --> */}
       <div id="main">
 
 
 
 
-
-        {/* <!-- Section A --> */}
         <section id="section-a" className="grid">
           <div className="content-wrap">
             <h2 className="content-title">Software Engineer</h2>
@@ -58,48 +51,34 @@ class App extends Component {
 
 
 
-        {/* <!-- Section B --> */}
+
+
+
         <div id="section-b" className="grid">
-
-
           <ul>
             <li>
-              <Card img={dom} title='DomDebugger'  description='A' />
+              <Card img={dom} title='DomDebugger'  description='A' btnLink='http://Linkedin.com/in/drmartirosian' />
             </li>
             <li>
-              <Card img={junky} title='JunKart'  description='B' />
+              <Card img={junky} title='JunKart'  description='B' btnLink='http://Linkedin.com/in/drmartirosian' />
             </li>
             <li>
-              <Card img={panda} title='RedPanda'  description='C' />
-            </li>
-            <li>
-              <Card img={panda} title='RedPanda'  description='C' />
-            </li>
-            <li>
-              <Card img={panda} title='RedPanda'  description='C' />
-            </li>
-            <li>
-              <Card img={panda} title='RedPanda'  description='C' />
-            </li>
-            <li>
-              <Card img={panda} title='RedPanda'  description='C' />
+              <Card img={panda} title='RedPanda'  description='C' btnLink='http://Linkedin.com/in/drmartirosian' />
             </li>
           </ul>
-
-
         </div>
 
 
 
 
 
-          {/* <!-- Section C --> */}
-          <section id="section-c" className="grid">
-            <div className="content-wrap">
-              <h2 className="content-title">We handle all of your digital needs</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
-            </div>
-          </section>
+        <section id="section-c" className="grid">
+          <div className="content-wrap">
+            <h1 className="content-title">SECTION:</h1>
+            <h3>adgdfasfsd sfsdf s sd fsd sd fs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequ</p>
+          </div>
+        </section>
 
 
 
@@ -108,35 +87,30 @@ class App extends Component {
 
 
 
-
-          {/* <!-- Section D --> */}
-          <section id="section-d" className="grid">
-            <div className="box">
-              <h2 className="content-title">Contact Me</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
-              <p>contact@acmewebsolutions.test</p>
-            </div>
-            <div className="box">
-              <h2 className="content-title">About Me</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut suscipit amet temporibus quo?</p>
-            </div>
-          </section>
-        </div>
+        <section id="section-d" className="grid">
+          <div className="box">
+            <h2 className="content-title">RESUME:</h2>
+            <a className="content-title" href="https://drive.google.com/file/d/1IqASiUplJi55HIDvGwV6lvE9Dn3lPuHE/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img className="reslet" src={resume} /></a>
+          </div>
+          <div className="box">
+            <h2 className="content-title">COVERLETTER:</h2>
+            <a className="content-title" href="https://docs.google.com/document/d/1WmiGBM5XUGNdj10uyTcjjBy7fPn1PrCM0QQs7OlrJEw/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><img className="reslet" src={coverletter} /></a>
+          </div>
+        </section>
 
 
 
 
 
-
-
-          {/* <!-- Footer --> */}
-          <footer id="main-footer" className="grid">
-            <div>Acme Web Solutions</div>
-            <div>Project By <a href="http://Linkedin.com/in/drmartirosian" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-          </footer>
+      </div>
 
 
 
+
+      <footer id="main-footer" className="grid">
+        <div>Acme Web Solutions</div>
+        <div>Project By <a href="http://Linkedin.com/in/drmartirosian" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+      </footer>
     </div>
     );
   }

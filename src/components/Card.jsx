@@ -11,7 +11,7 @@ export default class Card extends Component {
                   <div className="card-content">
                   <h3 className="card-title">{this.props.title}</h3>
                   <p>{this.props.description}</p>
-                      <button exact to={'/'}>TRY IT!</button>
+                  <a href={this.props.btnLink} className="btn" target="_blank" rel="noopener noreferrer"><strong>TRY IT!</strong></a>
                   </div>
               </div>
             </MainContainer>
