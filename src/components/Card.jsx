@@ -1,31 +1,40 @@
-/* Core Styles */
+import React, { Component } from 'react'
+import styled from 'styled-components'
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #333;
-  color: #fff;
-  font-size: 1.1em;
-  line-height: 1.5;
-  text-align: center;
+let img;
+export default class Card extends Component {
+    render() {
+        return (
+            <MainContainer>
+              <div className="card">
+                  <img src={this.props.img} alt="" />
+                  <div className="card-content">
+                  <h3 className="card-title">{this.props.title}</h3>
+                  <p>{this.props.description}</p>
+                      <button exact to={'/'}>TRY IT!</button>
+                  </div>
+              </div>
+            </MainContainer>
+        )
+    }
 }
 
+
+//MAIN CONTAINER
+const MainContainer = styled.div`
 img {
   display: block;
   width: 100%;
   height: auto;
 }
-
 h1, h2, h3 {
   margin: 0;
   padding: 1em 0;
 }
-
 p {
   margin: 0;
   padding: 1em 0;
 }
-
 .btn {
   display: inline-block;
   background: #333;
@@ -41,37 +50,6 @@ p {
 }
 
 
-#showcase {
-  min-height: 450px;
-  color: #fff;
-  text-align: center;
-}
-#showcase .bg-image {
-  position: absolute;
-  background: #333 url("./img/header.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 450px;
-  z-index: -1;
-  opacity: 0.4;
-}
-#showcase h1 {
-  padding-top: 100px;
-  padding-bottom: 0;
-}
-#showcase .content-wrap,
-#section-a .content-wrap {
-  padding: 0 1.5em;
-}
-
-/* Section A */
-#section-a {
-  background: #eaeaea;
-  color: #333;
-  padding-bottom: 2em;
-}
 
 #section-b {
   padding: 2em 1em 1em;
@@ -158,3 +136,9 @@ p {
 
 
 }
+
+
+
+
+
+`;
