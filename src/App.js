@@ -31,7 +31,7 @@ class App extends Component {
           <div className="content-wrap">
           <h1>Daniel <strong>Martirosian</strong></h1>
           <p>Software Engineer</p>
-          <h3><br></br> <a href="#main-footer" className="btn">Contact Info</a></h3>
+          <h3><br></br> <a href="#section-a" className="btn">START</a></h3>
         </div>
       </header>
 
@@ -94,11 +94,11 @@ class App extends Component {
         <section id="section-d" className="grid">
           <div className="box">
             <h2 className="content-title">RESUME:</h2>
-            <a className="content-title" href="https://drive.google.com/file/d/1IqASiUplJi55HIDvGwV6lvE9Dn3lPuHE/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img className="reslet" src={resume} /></a>
+            <a className="content-title" href="/" target="_blank" rel="noopener noreferrer"><img className="reslet" src={resume} /></a>
           </div>
           <div className="box">
             <h2 className="content-title">COVERLETTER:</h2>
-            <a className="content-title" href="https://docs.google.com/document/d/1WmiGBM5XUGNdj10uyTcjjBy7fPn1PrCM0QQs7OlrJEw/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><img className="reslet" src={coverletter} /></a>
+            <a className="content-title" href="/" target="_blank" rel="noopener noreferrer"><img className="reslet" src={coverletter} /></a>
           </div>
         </section>
 
